@@ -52,7 +52,7 @@ def conv2d_bn(x, nb_filter, num_row, num_col,
         channel_axis = 1
     else:
         channel_axis = -1
-    x = Convolution2D(nb_filter, (num_row, num_col),
+    x = Conv2D(nb_filter, (num_row, num_col),
                       strides=strides,
                       padding=padding,
                       use_bias=use_bias,
